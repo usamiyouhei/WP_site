@@ -1,0 +1,218 @@
+{
+    "key": "group_5a8b9c2d3e4f5",
+    "title": "通常投稿用カスタムフィールド",
+    "fields": [
+        {
+            "key": "field_post_subtitle",
+            "label": "サブタイトル",
+            "name": "post_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "投稿のサブタイトルを入力してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "例：記事の補足説明",
+            "prepend": "",
+            "append": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_post_thumbnail_alt",
+            "label": "アイキャッチ画像の代替テキスト",
+            "name": "post_thumbnail_alt",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "アイキャッチ画像の代替テキスト（alt属性）を入力してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "例：記事のメイン画像",
+            "prepend": "",
+            "append": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_post_meta_description",
+            "label": "メタディスクリプション",
+            "name": "post_meta_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "SEO用のメタディスクリプションを入力してください（推奨：120〜160文字）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 160,
+            "rows": 3,
+            "placeholder": "例：この記事では、WordPressのカスタムフィールドについて詳しく解説します。",
+            "new_lines": ""
+        },
+        {
+            "key": "field_post_summary",
+            "label": "記事の要約",
+            "name": "post_summary",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "記事の要約を入力してください（一覧ページなどで表示されます）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "例：この記事では、WordPressのカスタムフィールドの基本的な使い方から応用まで解説します。",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_post_author_info",
+            "label": "著者情報",
+            "name": "post_author_info",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "記事の著者名を入力してください（デフォルトの投稿者と異なる場合）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "例：山田 太郎",
+            "prepend": "",
+            "append": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_post_publish_date",
+            "label": "公開日（カスタム）",
+            "name": "post_publish_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "カスタムの公開日を設定してください（デフォルトの公開日と異なる場合）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "Y年m月d日",
+            "return_format": "Y-m-d",
+            "first_day": 1
+        },
+        {
+            "key": "field_post_featured_image",
+            "label": "追加画像",
+            "name": "post_featured_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "記事内で使用する追加の画像をアップロードしてください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg,jpeg,png,webp",
+            "preview_size": "medium",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_post_related_posts",
+            "label": "関連記事",
+            "name": "post_related_posts",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "関連する記事を選択してください（複数選択可）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "ui": 1,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_post_tags_custom",
+            "label": "カスタムタグ",
+            "name": "post_tags_custom",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "カスタムタグを入力してください（カンマ区切り）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "例：WordPress, カスタムフィールド, チュートリアル",
+            "prepend": "",
+            "append": "",
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "通常投稿（ニュース記事）用のカスタムフィールドグループです",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1768725800
+}

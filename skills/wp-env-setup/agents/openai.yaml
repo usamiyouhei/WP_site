@@ -1,0 +1,4 @@
+interface:
+  display_name: "WP Env Setup"
+  short_description: "wp-env ローカル環境の起動・初期設定・投稿作成・DB/プラグイン同期"
+  default_prompt: "Use $wp-env-setup to run このプロジェクトの WordPress ローカル環境（@wordpress/env）をセットアップして。Docker Desktop の起動確認 → yarn wp-start → yarn wp-init の順で進め、http://localhost:8888 の応答確認まで完了させて。"

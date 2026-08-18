@@ -1,0 +1,21 @@
+@use "../global" as *;
+
+// スキップリンク（キーボード操作時に本文へ直接移動するためのリンク）
+.c-skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: calc(var(--z-index-header) + 1);
+  padding: calc(12 * var(--to-rem)) calc(24 * var(--to-rem));
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: calc(14 * var(--to-rem));
+  line-height: 1.4;
+  translate: 0 -100%;
+  transition: translate var(--duration);
+}
+
+// フォーカス時のみ画面内に表示（キーボード操作を検知）
+.c-skip-link:focus-visible {
+  translate: 0 0;
+}

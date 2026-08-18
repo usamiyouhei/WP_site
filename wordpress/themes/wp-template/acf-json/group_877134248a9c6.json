@@ -1,0 +1,170 @@
+{
+    "key": "group_877134248a9c6",
+    "title": "制作実績設定",
+    "fields": [
+        {
+            "key": "field_32de524203bd8",
+            "label": "クライアント名",
+            "name": "works_client",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "制作実績のクライアント名を入力してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "例：株式会社サンプル",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ea7c9e720f0cf",
+            "label": "制作期間",
+            "name": "works_period",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "制作期間を入力してください（例：2024年1月〜2024年3月）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "例：2024年1月〜2024年3月",
+            "prepend": "",
+            "append": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_2ccef63afe357",
+            "label": "使用技術",
+            "name": "works_technologies",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "使用した技術を選択してください（複数選択可）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "html": "HTML",
+                "css": "CSS",
+                "javascript": "JavaScript",
+                "php": "PHP",
+                "wordpress": "WordPress",
+                "react": "React",
+                "vue": "Vue.js",
+                "node": "Node.js",
+                "python": "Python",
+                "ruby": "Ruby",
+                "java": "Java",
+                "design": "デザイン"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "allow_in_bindings": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "新規選択肢を追加"
+        },
+        {
+            "key": "field_6ca866c6fca79",
+            "label": "URL",
+            "name": "works_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "制作物のURLを入力してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/example.com",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_173ddf06747ba",
+            "label": "制作画像",
+            "name": "works_gallery",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "制作実績の画像をアップロードしてください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_17b8c702bbece",
+            "label": "制作内容の詳細",
+            "name": "works_description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "制作内容の詳細を記述してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0,
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "works"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "制作実績の詳細情報を管理するフィールドグループです",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1770195732
+}

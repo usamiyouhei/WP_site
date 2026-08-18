@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adapt Styles"
+  short_description: "SCSS 基盤（foundation/global）を参照プロジェクトの流儀に合わせる"
+  default_prompt: "Use $adapt-styles to run このテンプレートの src/assets/styles/ の foundation / global を参照プロジェクトに合わせて調整して。参照プロジェクトの src/ パスを確認してから、reset・変数・breakpoints の差分提示 → ユーザー合意 → 差し替えの順で進めて。"
