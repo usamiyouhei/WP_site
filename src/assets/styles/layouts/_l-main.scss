@@ -2,4 +2,8 @@
 
 .l-main {
   margin-block-start: var(--header-height);
+
+  &--front {
+    margin-block-start: 0;
+  }
 }
