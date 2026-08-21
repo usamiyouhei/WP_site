@@ -143,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // ハンバーガーメニュー
   const hamburger = document.querySelector(".js-hamburger");
   const drawer = document.querySelector(".js-drawer");
+  const drawerClose = document.querySelector(".js-drawer-close");
 
   if (hamburger && drawer) {
     // ハンバーガーメニューのクリックでドロワーを開閉
@@ -155,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.setAttribute("aria-expanded", "true");
         hamburger.setAttribute("aria-label", "メニューを閉じる");
         drawer.setAttribute("aria-hidden", "false");
-        disableBodyScroll();
+        // disableBodyScroll();
         fadeIn(drawer);
       } else {
         // ドロワーを閉じる時：フェードアウトしてから背景のスクロールを有効化
@@ -163,10 +164,23 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.setAttribute("aria-label", "メニューを開く");
         drawer.setAttribute("aria-hidden", "true");
         fadeOut(drawer);
-        enableBodyScroll();
+        // enableBodyScroll();
       }
     });
 
+    if (drawerClose) {
+      drawerClose.addEventListener("click", () => {
+        hamburger.classList.remove("is-open");
+
+        hamburger.setAttribute("aria-expanded", "false");
+        hamburger.setAttribute("aria-label", "メニューを開く");
+
+        drawer.setAttribute("aria-hidden", "true");
+
+        fadeOut(drawer);
+        // enableBodyScroll();
+      });
+    }
     // ドロワー内のリンクをクリックした時にドロワーを閉じる
     drawer.querySelectorAll("a[href]").forEach((link) => {
       link.addEventListener("click", () => {
@@ -175,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.setAttribute("aria-label", "メニューを開く");
         drawer.setAttribute("aria-hidden", "true");
         fadeOut(drawer);
-        enableBodyScroll();
+        // enableBodyScroll();
       });
     });
 
@@ -190,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hamburger.setAttribute("aria-label", "メニューを開く");
             drawer.setAttribute("aria-hidden", "true");
             fadeOut(drawer);
-            enableBodyScroll();
+            // enableBodyScroll();
           }
         }
       }),
